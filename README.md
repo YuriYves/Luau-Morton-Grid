@@ -26,9 +26,9 @@ The sorted data is divided into small chunks, and each chunk stores the minimum 
 
 ## Dynamic Objects
 
-Moving objects use a different representation. They are stored in a configurable spatial hash grid. Each occupied cell points to an intrusive linked list implemented via arrays; thus, moving an object requires only updating its position and—when necessary—unlinking it from one cell and linking it to another.
+Moving objects use a different representation. They are stored in a configurable spatial hash grid. Each occupied cell points to an intrusive linked list implemented via arrays; thus, moving an object requires only updating its position and when necessary, unlinking it from one cell and linking it to another.
 
-The grid is not always used for queries; for small dynamic sets, or when traversing grid cells is expected to be costlier than examining the objects directly, the module falls back to a linear scan. This is largely intentional. A spatial structure incurs its own search overhead, so using it for every single query does not necessarily reduce the amount of processing required.
+The grid is not always used for queries. For small dynamic sets, or when traversing grid cells is expected to be more costly than examining the objects directly, the module resorts to a linear scan. This is intentional. A spatial structure entails its own search overhead. Therefore, using it for every query does not necessarily reduce the amount of processing required.
 
 The default cell size can be changed through `Morton.Configure()` before dynamic objects are inserted.
 
