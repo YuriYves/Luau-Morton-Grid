@@ -81,3 +81,7 @@ Morton Grid came from an experiment rather than an attempt to design a universal
 I should mention again that assumption *will not* fit every project. A conventional Octree may be preferable when hierarchical subdivision itself is useful, when its update characteristics match the workload better or simply when a more general and established structure is desired. Likewise, Roblox's own spatial facilities can be preferable when the objects being queried already exist in a form those systems can index directly.
 
 The framework proposed here is primarily the result of exploring how much of the usual spatial-indexing machinery can be removed when the problem is narrowed enough.
+
+## License
+
+This project is licensed under the MIT License.
