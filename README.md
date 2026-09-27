@@ -70,7 +70,7 @@ However, this should not be interpreted as a *claim that native code generation 
 
 ## Benchmarks
 
-Benchmarks will be kept separately in `BENCHMARK.md`. They are intended to describe the behavior observed under specific workloads rather than establish a fixed performance ratio between Morton Grid and another spatial structure.
+Benchmarks will be kept separately in `Benchmark.md` inside the Benchmark folder. They are intended to describe the behavior observed under specific workloads rather than establish a fixed performance ratio between Morton Grid and another spatial structure.
 
 Object count, spatial distribution, query radius, movement frequency, grid configuration, native code generation and the processor running the test can all materially change the result. The benchmark environment is therefore recorded together with the measurements.
 
